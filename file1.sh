@@ -8,3 +8,13 @@ else
 
 fi
 
+
+
+dir = /c/Users/apple/Documents/GithubDev
+if [[ -d $dir ]]
+then
+      touch main.tf
+      echo "one file created"
+ else
+      echo "file already exist"
+ fi
