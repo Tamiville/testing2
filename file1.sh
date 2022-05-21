@@ -1,6 +1,6 @@
 #!/bin/sh
 read a
-if [$a -lt 5]
+if [ $a -lt 5 ]
 then
     echo "$a is a less number"
 else
@@ -8,13 +8,18 @@ else
 
 fi
 
-
-
-dir = /c/Users/apple/Documents/GithubDev
+dir=/c/Users/apple/Documents/GithubDev
 if [[ -d $dir ]]
 then
-      touch main.tf
-      echo "one file created"
+      mkdir testing
+      echo "one directory created"
  else
-      echo "file already exist"
+      echo "directory already exist"
  fi
+
+d=/c/Users/apple/Documents/GithubDev
+if ls -l $d
+   then
+ echo "these are all the files present here"
+
+fi
